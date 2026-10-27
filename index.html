@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frankly Bautista · Desarrollador Full-Stack Junior</title>
+  <meta name="description" content="Portfolio de Frankly Bautista, desarrollador full-stack junior con enfoque backend (TypeScript y Python).">
+  <meta property="og:title" content="Frankly Bautista · Desarrollador Full-Stack Junior">
+  <meta property="og:description" content="Construyo aplicaciones web completas, con autenticación, bases de datos bien diseñadas y pruebas, y las llevo hasta producción.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Principal">
+      <a class="brand" href="#inicio">FB<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a></li>
+        <li><a href="#proyectos" data-i18n="nav.projects">Proyectos</a></li>
+        <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+      <div class="lang-switch" role="group" aria-label="Idioma / Language">
+        <button type="button" data-lang="es" aria-pressed="true">ES</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Inicio -->
+    <section id="inicio" class="hero container">
+      <p class="eyebrow mono" data-i18n="hero.hello">Hola, soy</p>
+      <h1>Frankly Bautista</h1>
+      <p class="role" data-i18n="hero.role">Desarrollador Full-Stack Junior · enfoque backend (TypeScript y Python)</p>
+      <p class="tagline" data-i18n="hero.tagline">Construyo aplicaciones web completas, con autenticación, bases de datos bien diseñadas y pruebas, y las llevo hasta producción.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#proyectos" data-i18n="hero.cta">Ver proyectos</a>
+        <a class="btn" id="cv-link" href="#" download hidden data-i18n="hero.cv">Descargar CV</a>
+        <a class="btn" href="https://github.com/FranklyBautista" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/frankly-bautista-684611360/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="mailto:franklybautista476@gmail.com">Email</a>
+      </div>
+      <p class="location" data-i18n="hero.location">San Cristóbal, Táchira (Venezuela) · disponible para remoto y presencial</p>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="section container">
+      <h2 data-i18n="about.title">Sobre mí</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p data-i18n="about.p1">Soy estudiante de 8.º semestre de Ingeniería Informática en la UNET (Venezuela), a unos ocho meses de graduarme, y desarrollador full-stack con preferencia por el backend. Me gusta llevar los proyectos de principio a fin: definir el alcance, modelar la base de datos, construir la API y la interfaz, escribir pruebas y desplegar.</p>
+          <p data-i18n="about.p2">Trabajo sobre todo con TypeScript (Next.js, React, Node/Express) y Python (FastAPI), con PostgreSQL y Supabase como base de datos. Cuido cosas que no se ven pero importan: seguridad a nivel de filas (RLS), sesiones con cookies HTTP-only, migraciones versionadas, pruebas unitarias y E2E, y documentación de decisiones técnicas.</p>
+          <p data-i18n="about.p3">Busco mi primer empleo o prácticas en tech, en un equipo donde pueda aportar desde el primer día y seguir aprendiendo de gente con más experiencia.</p>
+        </div>
+        <div class="skills">
+          <h3 data-i18n="skills.title">Habilidades</h3>
+          <dl>
+            <div><dt data-i18n="skills.languages">Lenguajes</dt><dd>TypeScript, JavaScript, Python, SQL, HTML/CSS</dd></div>
+            <div><dt>Frontend</dt><dd>React 19, Next.js (App Router), Vite, Tailwind CSS, shadcn/ui, Recharts, PWA</dd></div>
+            <div><dt>Backend</dt><dd data-i18n="skills.backendList">Node.js, Express, FastAPI, APIs REST, autenticación (JWT, OAuth con Google, cookies HTTP-only), validación con Zod</dd></div>
+            <div><dt data-i18n="skills.db">Bases de datos</dt><dd data-i18n="skills.dbList">PostgreSQL, Supabase (RLS, RPC, migraciones), Prisma, SQLAlchemy</dd></div>
+            <div><dt data-i18n="skills.mobile">Móvil</dt><dd data-i18n="skills.mobileList">React Native con Expo</dd></div>
+            <div><dt data-i18n="skills.quality">Calidad y pruebas</dt><dd data-i18n="skills.qualityList">Vitest, Testing Library, Playwright (E2E), axe-core (accesibilidad), pgTAP, Pytest</dd></div>
+            <div><dt data-i18n="skills.tools">Herramientas</dt><dd>Git/GitHub, GitHub Actions (CI), Docker, Vercel, pnpm, Postman/Swagger</dd></div>
+            <div><dt data-i18n="skills.fundamentals">Fundamentos</dt><dd data-i18n="skills.fundamentalsList">Arquitectura en capas, diseño de APIs REST, modelado de datos, seguridad de datos (RLS, sesiones seguras)</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="section container">
+      <h2 data-i18n="projects.title">Proyectos destacados</h2>
+
+      <article class="project">
+        <header>
+          <h3>Habit Tracker <span class="subtitle" data-i18n="habit.subtitle">— web PWA + app móvil</span></h3>
+          <div class="project-links">
+            <a class="btn btn-primary btn-sm" href="https://habit-master-web.vercel.app/" target="_blank" rel="noopener" data-i18n="links.demo">Demo</a>
+            <a class="btn btn-sm" href="https://github.com/FranklyBautista/Habit_master" target="_blank" rel="noopener" data-i18n="links.code">Código</a>
+          </div>
+        </header>
+        <dl class="project-body">
+          <div><dt data-i18n="labels.problem">Problema</dt><dd data-i18n="habit.problem">Quería una app de hábitos que funcione igual en el navegador y en el móvil, sin perder datos y con estadísticas reales de progreso.</dd></div>
+          <div><dt data-i18n="labels.built">Qué construí</dt><dd data-i18n="habit.built">Una web responsive instalable como PWA y una app móvil con Expo que comparten la lógica en un monorepo. Permite crear y archivar hábitos sin perder historial, marcar el día, ver un calendario mensual y estadísticas de 7, 30 y 90 días con rachas. Incluye registro, login con Google, verificación por código y recordatorios en el móvil.</dd></div>
+          <div><dt data-i18n="labels.outcome">Resultado</dt><dd data-i18n="habit.outcome">MVP web completo y desplegado en Vercel, con entornos de preview por PR y producción; app Android en beta interna contra producción. Pruebas unitarias, E2E con auditoría de accesibilidad y pruebas de seguridad de la base de datos.</dd></div>
+        </dl>
+        <ul class="tags" data-i18n-label="labels.tech" aria-label="Tecnologías">
+          <li>Next.js 16</li><li>React 19</li><li data-i18n="habit.ts">TypeScript estricto</li><li>Tailwind v4</li><li>Supabase (Postgres + RLS)</li><li>Expo</li><li>Recharts</li><li>Vitest</li><li>Playwright</li><li>pgTAP</li><li>Vercel</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <header>
+          <h3>Expense Track <span class="subtitle" data-i18n="expense.subtitle">— gestor de gastos full-stack</span></h3>
+          <div class="project-links">
+            <a class="btn btn-sm" href="https://github.com/FranklyBautista/Expense-Track" target="_blank" rel="noopener" data-i18n="links.code">Código</a>
+          </div>
+        </header>
+        <dl class="project-body">
+          <div><dt data-i18n="labels.problem">Problema</dt><dd data-i18n="expense.problem">Llevar el control de los gastos personales de forma segura, de modo que cada usuario vea y modifique solo sus propios datos.</dd></div>
+          <div><dt data-i18n="labels.built">Qué construí</dt><dd data-i18n="expense.built">Una aplicación full-stack con registro, inicio y cierre de sesión, rutas protegidas y CRUD de gastos con filtros por fecha, monto, categoría y búsqueda. El backend es una API REST propia y el frontend un dashboard en React.</dd></div>
+          <div><dt data-i18n="labels.outcome">Resultado</dt><dd data-i18n="expense.outcome">API con aislamiento de datos por usuario, validación en todas las entradas, migraciones versionadas y sesión persistente segura, lista para levantar en local con Docker.</dd></div>
+        </dl>
+        <ul class="tags" data-i18n-label="labels.tech" aria-label="Tecnologías">
+          <li>TypeScript</li><li>Node.js</li><li>Express</li><li>Prisma</li><li>PostgreSQL</li><li>Zod</li><li>bcrypt</li><li data-i18n="expense.jwt">JWT en cookie HTTP-only</li><li>React</li><li>Vite</li><li>React Router</li><li>Tailwind</li><li>shadcn/ui</li><li>Docker Compose</li>
+        </ul>
+      </article>
+
+      <article class="project project-soon">
+        <p class="badge mono" data-i18n="soon.badge">Próximamente</p>
+        <h3 data-i18n="soon.title">Asistente de gastos multimoneda</h3>
+        <p data-i18n="soon.text">Bot de Telegram que registra gastos escritos en lenguaje natural en bolívares, pesos, dólares o USDT.</p>
+      </article>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section container">
+      <h2 data-i18n="contact.title">Contacto</h2>
+      <p class="contact-intro" data-i18n="contact.intro">¿Tienes una vacante, unas prácticas o un proyecto en mente? Escríbeme y te respondo pronto.</p>
+      <ul class="contact-list">
+        <li><span class="mono" data-i18n="contact.email">Email</span><a href="mailto:franklybautista476@gmail.com">franklybautista476@gmail.com</a></li>
+        <li><span class="mono">LinkedIn</span><a href="https://www.linkedin.com/in/frankly-bautista-684611360/" target="_blank" rel="noopener">linkedin.com/in/frankly-bautista-684611360</a></li>
+        <li><span class="mono">GitHub</span><a href="https://github.com/FranklyBautista" target="_blank" rel="noopener">github.com/FranklyBautista</a></li>
+        <li><span class="mono" data-i18n="contact.location">Ubicación</span><span data-i18n="contact.locationText">San Cristóbal, Táchira (Venezuela) · remoto y presencial</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year">2026</span> Frankly Bautista</div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
